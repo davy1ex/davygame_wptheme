@@ -4,6 +4,13 @@
     margin: 0px;
 }
 
+a, a:hover, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 /* SETTINGS FOR BOTTOM FOOTER */
 html {
     height: 100%;
@@ -23,6 +30,9 @@ footer{
     flex: 0 0 auto;
 }
 /* SETTINGS FOR BOTTOM FOOTER */
+
+
+
 
 body {
     background-color: #0D0C17;
@@ -69,12 +79,15 @@ header {
     width: 30vh;
     height: 100px;
 
+    text-transform: uppercase;
     color: white;
     text-align: center;
     line-height: 100px;
 }
 
-.nav-menu {
+
+/* NAV MENU */
+.nav-menu ul {
     height: 100px;
 
     width: 70vw;
@@ -87,9 +100,11 @@ header {
     color: white;
 }
 
-.header_item {
+.nav-menu li {
+    list-style: none;
     margin-right: 57px;
 }
+/* NAV MENU */
 
 
 /* BANNER TEXT */
