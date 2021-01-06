@@ -198,7 +198,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .event:nth-child(odd) {
@@ -217,6 +217,34 @@ header {
 /* EVENTS */
 
 
+/* SCHEDULE */
+.schedules {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule, .schedule .time-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule {
+    padding: 30px;
+    border-bottom: 1px solid #1f1e21;
+    justify-content: left;
+}
+
+.schedule .name-schedule {
+    margin-left: 30px;
+}
+
+.schedule .name-schedule, .schedule .time {
+    font-size: 1.5em;
+}
+.schedule .format {
+    margin-top: auto;
+}
+/* SCHEDULE */
 
 
 /* CONTACTS */

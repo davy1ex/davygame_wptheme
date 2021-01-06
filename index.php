@@ -27,26 +27,72 @@
             EVENTS
         </div>
         <?php
-            if ( have_posts() ):
-                while( have_posts() ): 
-                    the_post( );
-        ?>
+            // if ( have_posts() ):
+            //     while( have_posts() ): 
+            //         the_post( );
+            $events = get_posts( array(
+                'category_name' => 'events'
+            ) );
+            if ( isset($events) ) :
+                foreach( $events as $post ):
+                    setup_postdata($post);
+                ?>
         
-                    <div class="event">
-                        
-                        <img class="event-img" src="<?php the_post_thumbnail_url() ?>" alt="">
+        <a class="event" href="<?php the_permalink() ?>">
+            <!-- <div class="event"> -->
+            <img class="event-img" src="<?php the_post_thumbnail_url() ?>" alt="">
 
-                        <div class="event-desc">
-                            <?php echo get_the_excerpt() ?>
-                        </div>
-                    </div>
+            <div class="event-desc">
+                <?php echo get_the_excerpt() ?>
+            </div>
+            <!-- </div> -->
+        </a>
+            
+            
+            
+        <?php
+                endforeach;
+                wp_reset_postdata(); 
+        ?>
+            
+                    
         <?php 
-                endwhile;
+                // endwhile;
                     
             else: ?>
                 <?php get_template_part( 'tmp/no-posts' ); ?>
             <? endif; ?>
     </div>
+    
+
+    <div class="schedules container">
+        <div class="title">
+            SCHEDULE
+        </div>
+        
+        <div class="schedule">
+            <div class="time-line">
+                <div class="time">9</div>
+                <div class="format">pm</div>
+            </div>
+
+            <div class="name-schedule">
+                COD
+            </div>
+        </div>
+
+        <div class="schedule">
+            <div class="time-line">
+                <div class="time">12</div>
+                <div class="format">pm</div>
+            </div>
+
+            <div class="name-schedule">
+                Mk 11
+            </div>
+        </div>
+    </div>
+
 
     <div class="contacts container">
         <div class="title">
