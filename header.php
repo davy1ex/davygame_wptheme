@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="banner" style="background-image: url('img/banner.jpg');">
+    <div class="banner" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/img/banner.jpg' ?>)" >
         <header>
             <div class="wrapper-header">
                 <div class="logo"><? bloginfo( 'name' ) ?></div>

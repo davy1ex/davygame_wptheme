@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     height: 100%;
 }
-header{
+header, .banner{
     flex: 0 0 auto;
  }
 .main-content{
@@ -42,6 +42,11 @@ body {
 .container {
     width: 1000px;
     margin: auto;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    background-color: #141321;
 }
 .container:not(:first-child) {
     margin-top: 20px;
@@ -53,6 +58,7 @@ body {
 }
 
 .banner {
+    /* background-image: url('/assets/img/banner.jpg'); */
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,6 +109,11 @@ header {
 .nav-menu li {
     list-style: none;
     margin-right: 57px;
+
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    background: #0D0C17;
+    padding: 15px;
 }
 /* NAV MENU */
 
@@ -184,21 +195,28 @@ header {
 /* BANNER TEXT */
 
 
+.main-content {
+    margin-top: 20px;
+}
 /* EVENTS */
 .events-container {
     display: flex;
     flex-direction: column;
 
-    width: 1000px;
+    /* width: 1000px; */
     margin: auto;
 }
 
 .event {
-    width: 100%;
+    /* width: 90%; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #0D0C17;
+    box-shadow: 1px 1px 5px black;
 }
 
 .event:nth-child(odd) {
@@ -207,6 +225,7 @@ header {
 
 .event-img {
     width: 47%;
+    border-radius: 5px;
 }
 
 .event-desc {
@@ -221,6 +240,11 @@ header {
 .schedules {
     display: flex;
     flex-direction: column;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: #141321;
 }
 
 .schedule, .schedule .time-line {
@@ -230,8 +254,14 @@ header {
 
 .schedule {
     padding: 30px;
-    border-bottom: 1px solid #1f1e21;
+    border-radius: 10px;
+    background: #0D0C17;
+    box-shadow: 1px 1px 5px black;
+    /* border-bottom: 1px solid #1f1e21; */
     justify-content: left;
+}
+.schedule:not(:first-child) {
+    margin-top: 15px;
 }
 
 .schedule .name-schedule {
@@ -257,7 +287,7 @@ form .user-email {
     box-shadow: 1px 1px 10px black;
     padding: 20px;
     width: 70%;
-    background: #1f1e21;
+    background: #0D0C17;
     color:#eee;
     border-radius: 2px;
 }
@@ -265,7 +295,7 @@ form .send {
     margin-top: 10px;
     width: 100px;
     padding: 20px;
-    background: #1f1e21;
+    background: #0D0C17;
     border: none;
     box-shadow: 1px 1px 10px black;
     color:#75755A;
