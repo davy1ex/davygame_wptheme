@@ -2,7 +2,7 @@
 
     <!-- <div class="banner" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/img/banner.jpg' ?>)"> -->
         <!-- <div class="container"> -->
-            <div class="desc">
+            <div class="banner-desc">
                 <div class="date">
                     <div class="days">21.</div>
                     <div class="mounth">12.</div>
@@ -38,10 +38,10 @@
                     setup_postdata($post);
                 ?>
         
-        <a class="event" href="<?php the_permalink() ?>">
+        <a class="event container-child" href="<?php the_permalink() ?>">
             <img class="event-img" src="<?php the_post_thumbnail_url() ?>" alt="">
 
-            <div class="event-desc">
+            <div class="event-desc desc">
                 <?php echo get_the_excerpt() ?>
             </div>
         </a>
@@ -66,7 +66,7 @@
             SCHEDULE
         </div>
         
-        <div class="schedule">
+        <div class="schedule container-child">
             <div class="time-line">
                 <div class="time">9</div>
                 <div class="format">pm</div>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="schedule">
+        <div class="schedule container-child">
             <div class="time-line">
                 <div class="time">12</div>
                 <div class="format">pm</div>
@@ -97,8 +97,8 @@
 
         <div class="form-container">
             <form action="">
-                <input name="user-email" class="user-email" placeholder="Input Your Email" type="text">
-                <input class="send" type="submit" value="Send">
+                <input name="user-email" class="user-email container-child" placeholder="Input Your Email" type="text">
+                <input class="send container-child" type="submit" value="Send">
             </form>
         </div>
     </div>
