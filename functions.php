@@ -58,18 +58,34 @@ function davygame_register_types() {
 			'parent_item_colon'  => '',
 			'menu_name'          => 'Events'
 
-		  ),
+		),
         'public'             => true,
         'menu_position'      => 20,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'show_in_menu'       => true,
-		'query_var'          => true,
-		'rewrite'            => true,
-		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'menu_position'      => null,
+		'supports'           => array('title')//,'editor','author','thumbnail','excerpt','comments')
+    ]);
+
+    register_post_type('schedules', [
+        'labels'             => array(
+			'name'               => 'Schedule', // Основное название типа записи
+			'singular_name'      => 'Schedule', // отдельное название записи типа Book
+			'add_new'            => 'add new Schedule',
+			'add_new_item'       => 'add new Schedule',
+			'edit_item'          => 'edit Schedule',
+			'new_item'           => 'new Schedule',
+			'view_item'          => 'view Schedule',
+			'search_items'       => 'search Schedules',
+			'not_found'          => 'events not found',
+			'not_found_in_trash' => 'events not found in trash',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Schedules'
+
+		),
+        'public'             => true,
+        'menu_position'      => 20,
+		'has_archive'        => true,
+		'hierarchical'       => false,
 		'supports'           => array('title')//,'editor','author','thumbnail','excerpt','comments')
     ]);
 }

@@ -37,12 +37,14 @@ footer{
 
 /* THEME SETTINGS */
 body, .container-child {
-    background-color: #1B1B3D;
+    /* background-color: #1B1B3D; */
+    background-color: #141432;
 }
 .container, .nav-menu li {
     border-radius: 20px;
     box-shadow: 0 0 1px black;
-    background-color: #141432;
+    /* background-color: #141432; */
+    background-color: #1B1B3D;
 }
 .container-child {
     border-radius: 20px;
@@ -100,7 +102,7 @@ header {
     margin: auto;
 
     display: flex;
-    justify-content: row;
+    justify-content: space-between;
 }
 
 
@@ -116,15 +118,18 @@ header {
 
 
 /* NAV MENU */
-.nav-menu ul {
-    height: 100px;
+.nav-menu {
+    height: 100%;
+}
+.nav-menu ul, #menu-header ul {
+    height: 100%;
 
     width: 70vw;
-    display: flex;
-    justify-content: row;
+    display: flex!important;
+    /* justify-content: row; */
 
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center!important;
+    align-items: center!important;
     box-shadow: inset;
     color: white;
 }

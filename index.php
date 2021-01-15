@@ -24,7 +24,7 @@
     </div>
     
     
-    <div class="main-content">
+<div class="main-content">
     <div class="events-container container">
         <div class="title">
             EVENTS
