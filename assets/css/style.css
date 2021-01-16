@@ -118,19 +118,21 @@ header {
 
 
 /* NAV MENU */
-.nav-menu {
-    height: 100%;
+.nav-menu, .menu-header-container {
+    height: 100px;
+    width: 70%;
 }
-.nav-menu ul, #menu-header ul {
+.nav-menu  {
     height: 100%;
 
     width: 70vw;
-    display: flex!important;
+    display: flex;
+    flex-direction: row;
     /* justify-content: row; */
 
-    justify-content: center!important;
-    align-items: center!important;
-    box-shadow: inset;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset; */
     color: white;
 }
 
@@ -139,8 +141,12 @@ header {
     margin-right: 57px;
 
     box-shadow: 1px 1px 5px black;
-    /* background: #0D0C17; */
     padding: 15px;
+}
+
+.nav-menu li:hover {
+    padding: 20px;
+    background-color: #141432;
 }
 /* NAV MENU */
 
