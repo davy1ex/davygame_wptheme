@@ -1,9 +1,9 @@
 
-<footer>	
-    <?php echo nl2br(esc_html(get_theme_mod('footer_text', 'tt'))); ?>
-    <div class="site-info">
-        tt
-    </div>    
+<footer>
+    <div class="footer-wrapper">
+    (c) davy1ex 2021
+    </div>
+   
 </footer>
 <script src="js/live.js"></script>
 </body>

@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
-
+.img-default {
+    display: block;
+    width: 100%;
+}
 a, a:hover, a:visited, a:active {
     color: white;
     text-decoration: none;
@@ -40,7 +43,7 @@ body, .container-child {
     /* background-color: #1B1B3D; */
     background-color: #141432;
 }
-.container, .nav-menu li {
+.container, .nav-menu li, .footer-wrapper {
     border-radius: 20px;
     box-shadow: 0 0 1px black;
     /* background-color: #141432; */
@@ -118,19 +121,19 @@ header {
 
 
 /* NAV MENU */
-.nav-menu, .menu-header-container {
+.menu-header-container {
     height: 100px;
     width: 70%;
 }
 .nav-menu  {
     height: 100%;
 
-    width: 70vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    /* justify-content: row; */
 
-    justify-content: center;
+    justify-content:flex-end;
+    /* align-items: center; */
     align-items: center;
     /* box-shadow: inset; */
     color: white;
@@ -230,6 +233,8 @@ header {
 .main-content {
     margin-top: 20px;
 }
+
+
 /* EVENTS */
 .events-container {
     display: flex;
@@ -259,6 +264,24 @@ header {
     width: 47%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 1.3em;
+}
+
+/* SINGLE-EVENT */
+article img {
+    border-radius: 5px;
+}
+article .title {
+    margin-top: 10px;
+}
+.article-desc {
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 1.3em;
+}
+.time_start {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: right;
+    margin-top: 10px;
 }
 /* EVENTS */
 
@@ -325,3 +348,16 @@ form .send {
     border-radius: 10px;
 }
 /* CONTACTS */
+
+
+/* FOOTER */
+footer {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
+.footer-wrapper {
+    text-align: center;
+    padding: 30px;
+}
+/* FOOTER */

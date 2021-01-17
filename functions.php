@@ -1,7 +1,7 @@
 <?
 add_action( 'after_setup_theme', 'davygame_setup' );
 add_action( 'wp_enqueue_scripts', 'davygame_scripts' );
-add_action( 'customize_register', 'davygame_customize_register' );
+// add_action( 'customize_register', 'davygame_customize_register' );
 add_action( 'init', 'davygame_register_types' );
 
 
@@ -66,28 +66,28 @@ function davygame_register_types() {
 		'supports'           => array('title', 'editor', 'thumbnail')//,'editor','author','thumbnail','excerpt','comments')
     ]);
 
-    register_post_type('schedules', [
-        'labels'             => array(
-			'name'               => 'Schedule', // Основное название типа записи
-			'singular_name'      => 'Schedule', // отдельное название записи типа Book
-			'add_new'            => 'add new Schedule',
-			'add_new_item'       => 'add new Schedule',
-			'edit_item'          => 'edit Schedule',
-			'new_item'           => 'new Schedule',
-			'view_item'          => 'view Schedule',
-			'search_items'       => 'search Schedules',
-			'not_found'          => 'events not found',
-			'not_found_in_trash' => 'events not found in trash',
-			'parent_item_colon'  => '',
-			'menu_name'          => 'Schedules'
+    // register_post_type('schedules', [
+    //     'labels'             => array(
+	// 		'name'               => 'Schedule', // Основное название типа записи
+	// 		'singular_name'      => 'Schedule', // отдельное название записи типа Book
+	// 		'add_new'            => 'add new Schedule',
+	// 		'add_new_item'       => 'add new Schedule',
+	// 		'edit_item'          => 'edit Schedule',
+	// 		'new_item'           => 'new Schedule',
+	// 		'view_item'          => 'view Schedule',
+	// 		'search_items'       => 'search Schedules',
+	// 		'not_found'          => 'events not found',
+	// 		'not_found_in_trash' => 'events not found in trash',
+	// 		'parent_item_colon'  => '',
+	// 		'menu_name'          => 'Schedules'
 
-		),
-        'public'             => true,
-        'menu_position'      => 20,
-		'has_archive'        => true,
-		'hierarchical'       => false,
-		'supports'           => array('title', 'editor', 'thumbnail')
-    ]);
+	// 	),
+    //     'public'             => true,
+    //     'menu_position'      => 20,
+	// 	'has_archive'        => true,
+	// 	'hierarchical'       => false,
+	// 	'supports'           => array('title', 'editor', 'thumbnail')
+    // ]);
 
     register_taxonomy( 'time_start', [ 'events' ], [ 
 		'label'                 => '', // определяется параметром $labels->name

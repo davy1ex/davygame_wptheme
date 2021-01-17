@@ -1,27 +1,23 @@
 <? get_header(); ?>
+    <div class="banner-desc">
+        <div class="date">
+            <div class="days">21.</div>
+            <div class="mounth">12.</div>
+            <div class="year">21</div>
+        </div>
 
-    <!-- <div class="banner" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/img/banner.jpg' ?>)"> -->
-        <!-- <div class="container"> -->
-            <div class="banner-desc">
-                <div class="date">
-                    <div class="days">21.</div>
-                    <div class="mounth">12.</div>
-                    <div class="year">21</div>
-                </div>
-        
-                <div class="event-text">
-                    <div class="large">LARGEST GAME EVENT</div>
-                    <div class="medium">SAMARA UNIVERSITY, CORP. 42, CAB. 4</div>
-                </div>
+        <div class="event-text">
+            <div class="large">LARGEST GAME EVENT</div>
+            <div class="medium">SAMARA UNIVERSITY, CORP. 42, CAB. 4</div>
+        </div>
 
-                <div class="social">
-                    <div class="social_item"><a href=""><img src="img/vk.svg" alt=""></a></div>
-                    <div class="social_item"><a href=""><img src="img/inst.png" alt=""></a></div>
-                    <div class="social_item"><a href=""><img src="img/twitter.png" alt=""></a></div>
-                </div>
-            </div> 
-        <!-- </div>  -->
-    </div>
+        <div class="social">
+            <div class="social_item"><a href=""><img src="img/vk.svg" alt=""></a></div>
+            <div class="social_item"><a href=""><img src="img/inst.png" alt=""></a></div>
+            <div class="social_item"><a href=""><img src="img/twitter.png" alt=""></a></div>
+        </div>
+    </div> 
+</div>
     
     
 <div class="main-content">
@@ -31,8 +27,7 @@
         </div>
         <?php
             $events = get_posts( array(
-                'post_type' => 'events',
-                // 'category_name' => 'events'
+                'post_type' => 'events'
             ) );
             if ( isset($events) ) :
                 foreach( $events as $post ):
@@ -46,8 +41,6 @@
                 <?php echo get_the_excerpt() ?>
             </div>
         </a>
-            
-            
             
         <?php
                 endforeach;
@@ -69,18 +62,16 @@
 
         <?php
             $events = get_posts( array(
-                'post_type' => 'events',
-                // 'category_name' => 'events'
+                'post_type' => 'events'
             ) );
             if ( isset($events) ) :
                 foreach( $events as $post ):
                     setup_postdata($post);                    
-                ?>
+        ?>
 
         <div class="schedule container-child">
             <div class="time-line">
                 <div class="time"><?php $terms = get_the_terms( $post->ID , 'time_start' ); echo $terms[0]->slug; ?></div>
-                <!-- <div class="format">pm</div> -->
             </div>
 
             <div class="name-schedule">
@@ -88,40 +79,12 @@
             </div>
         </div>
         
-        
-            
-            
-            
         <?php
                 endforeach;
-                wp_reset_postdata(); 
-        ?>
-        <?php                     
-            else: ?>
-                <?php get_template_part( 'tmp/no-posts' ); ?>
-            <? endif; ?>
-        
-        <!-- <div class="schedule container-child">
-            <div class="time-line">
-                <div class="time">9</div>
-                <div class="format">pm</div>
-            </div>
-
-            <div class="name-schedule">
-                COD
-            </div>
-        </div>
-
-        <div class="schedule container-child">
-            <div class="time-line">
-                <div class="time">12</div>
-                <div class="format">pm</div>
-            </div>
-
-            <div class="name-schedule">
-                Mk 11
-            </div>
-        </div> -->
+                wp_reset_postdata();                             
+            else: 
+                get_template_part( 'tmp/no-posts' ); 
+            endif; ?>        
     </div>
 
 

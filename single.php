@@ -11,14 +11,16 @@
         ?>
 
         <article>            
-            <?php the_post_thumbnail() ?>
+            <img class="img-default" src="<?php the_post_thumbnail_url() ?>" alt="">
             <h1 class="title"><?php the_title(); ?></h1>
             
+            <div class="article-desc">
+                <?php the_content() ?>
+            </div>
             
-            <?php the_content() ?>
 
             
-            <time><?php the_date() ?></time>
+            <div class="time_start">Time start: <?php $terms = get_the_terms( $post->ID , 'time_start' ); echo $terms[0]->slug; ?></div>
             
         </article>
 
@@ -32,3 +34,7 @@
         <?php endif; ?>
     </div>
 </div>
+
+<?php
+get_footer() 
+?>
