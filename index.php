@@ -31,7 +31,8 @@
         </div>
         <?php
             $events = get_posts( array(
-                'category_name' => 'events'
+                'post_type' => 'events',
+                // 'category_name' => 'events'
             ) );
             if ( isset($events) ) :
                 foreach( $events as $post ):
@@ -65,8 +66,42 @@
         <div class="title">
             SCHEDULE
         </div>
-        
+
+        <?php
+            $events = get_posts( array(
+                'post_type' => 'events',
+                // 'category_name' => 'events'
+            ) );
+            if ( isset($events) ) :
+                foreach( $events as $post ):
+                    setup_postdata($post);                    
+                ?>
+
         <div class="schedule container-child">
+            <div class="time-line">
+                <div class="time"><?php $terms = get_the_terms( $post->ID , 'time_start' ); echo $terms[0]->slug; ?></div>
+                <!-- <div class="format">pm</div> -->
+            </div>
+
+            <div class="name-schedule">
+                <?php the_title( ) ?>
+            </div>
+        </div>
+        
+        
+            
+            
+            
+        <?php
+                endforeach;
+                wp_reset_postdata(); 
+        ?>
+        <?php                     
+            else: ?>
+                <?php get_template_part( 'tmp/no-posts' ); ?>
+            <? endif; ?>
+        
+        <!-- <div class="schedule container-child">
             <div class="time-line">
                 <div class="time">9</div>
                 <div class="format">pm</div>
@@ -86,7 +121,7 @@
             <div class="name-schedule">
                 Mk 11
             </div>
-        </div>
+        </div> -->
     </div>
 
 

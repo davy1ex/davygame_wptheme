@@ -63,7 +63,7 @@ function davygame_register_types() {
         'menu_position'      => 20,
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'supports'           => array('title')//,'editor','author','thumbnail','excerpt','comments')
+		'supports'           => array('title', 'editor', 'thumbnail')//,'editor','author','thumbnail','excerpt','comments')
     ]);
 
     register_post_type('schedules', [
@@ -86,7 +86,7 @@ function davygame_register_types() {
         'menu_position'      => 20,
 		'has_archive'        => true,
 		'hierarchical'       => false,
-		'supports'           => array('title')//,'editor','author','thumbnail','excerpt','comments')
+		'supports'           => array('title', 'editor', 'thumbnail')
     ]);
 
     register_taxonomy( 'time_start', [ 'events' ], [ 
