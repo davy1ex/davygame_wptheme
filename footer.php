@@ -1,7 +1,7 @@
 
 <footer>
     <div class="footer-wrapper">
-    (c) davy1ex 2021
+        <?php the_field('center_text') ?>
     </div>
    
 </footer>

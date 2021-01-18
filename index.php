@@ -1,14 +1,14 @@
 <? get_header(); ?>
     <div class="banner-desc">
         <div class="date">
-            <div class="days">21.</div>
-            <div class="mounth">12.</div>
-            <div class="year">21</div>
+            <div class="days"><?php echo get_field('day') ?>.</div>
+            <div class="mounth"><?php echo get_field('mounth') ?>.</div>
+            <div class="year"><?php echo get_field('year') ?></div>
         </div>
 
         <div class="event-text">
-            <div class="large">LARGEST GAME EVENT</div>
-            <div class="medium">SAMARA UNIVERSITY, CORP. 42, CAB. 4</div>
+            <div class="large"><?php the_field('bigger-desc') ?></div>
+            <div class="medium"><?php the_field('bigger-desc') ?></div>
         </div>
 
         <div class="social">
