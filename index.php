@@ -8,7 +8,7 @@
 
         <div class="event-text">
             <div class="large"><?php the_field('bigger-desc') ?></div>
-            <div class="medium"><?php the_field('bigger-desc') ?></div>
+            <div class="medium"><?php the_field('smaller_desc') ?></div>
         </div>
 
         <div class="social">
