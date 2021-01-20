@@ -330,7 +330,8 @@ article .title {
     display: flex;
     flex-direction: column;
 }
-form .user-email {
+form .user-email, form .username {
+    margin: 5px 0;
     border: none;
     padding: 20px;
     width: 70%;

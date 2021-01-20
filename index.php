@@ -94,7 +94,8 @@
         </div>
 
         <div class="form-container">
-            <form action="">
+            <form action="<?php echo esc_url(admin_url( 'admin-post.php' )) ?>">
+                <input name="username" class="username container-child" placeholder="Input Your usename" type="text">
                 <input name="user-email" class="user-email container-child" placeholder="Input Your Email" type="text">
                 <input class="send container-child" type="submit" value="Send">
             </form>
