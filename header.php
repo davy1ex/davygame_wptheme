@@ -8,9 +8,10 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<? wp_head(); ?>
 </head>
-<body>
-<? wp_head() ?>
+<body <?php body_class(); ?> >
+<?php wp_body_open(); ?>
     <div class="banner" style="background-image: url(<?php if(is_front_page(  )): echo get_stylesheet_directory_uri() . '/assets/img/banner.jpg'; endif ?>)" >
         <header>
             <div class="wrapper-header">

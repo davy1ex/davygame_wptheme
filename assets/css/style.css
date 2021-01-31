@@ -17,6 +17,7 @@ a, a:hover, a:visited, a:active {
 /* SETTINGS FOR BOTTOM FOOTER */
 html {
     height: 100%;
+    margin-top: 0 !important;
 }
 body {
     display: flex;
@@ -25,7 +26,7 @@ body {
 }
 header, .banner{
     flex: 0 0 auto;
- }
+}
 .main-content{
     flex: 1 0 auto;
 }
