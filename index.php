@@ -97,7 +97,7 @@
 
         <div class="form-container">
             <?php echo apply_filters('the_content', $page_contacts->post_content);?>
-            <!-- <form action="<?php echo esc_url(admin_url( 'admin-post.php' )) ?>">
+            <!-- <form action="<?php //echo esc_url(admin_url( 'admin-post.php' )) ?>">
                 <input name="username" class="username container-child" placeholder="Input Your usename" type="text">
                 <input name="user-email" class="user-email container-child" placeholder="Input Your Email" type="text">
                 <input class="send container-child" type="submit" value="Send">
