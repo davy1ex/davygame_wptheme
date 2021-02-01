@@ -1,11 +1,14 @@
 
+</div> <!-- #content -->
 <footer>
     <div class="footer-wrapper">
         <?php the_field('center_text') ?>
     </div>
-   
+    <script src="js/live.js"></script>
 </footer>
-<script src="js/live.js"></script>
-</body>
 
+</div><!-- #page -->
+<?php wp_footer(); ?>
+
+</body>
 </html>

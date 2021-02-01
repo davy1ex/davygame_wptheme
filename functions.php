@@ -10,7 +10,8 @@ function davygame_setup() {
 }
 
 function davygame_scripts() {
-    wp_enqueue_style( 'style.css', get_stylesheet_directory_uri() . '/assets/css/style.css');
+	wp_enqueue_style( 'style.css', get_stylesheet_directory_uri() . '/assets/css/style.css');
+	wp_enqueue_style( 'mobile.css', get_stylesheet_directory_uri() . '/assets/css/mobile.css');
 }
 
 function davygame_register_types() {

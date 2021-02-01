@@ -1,0 +1,107 @@
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    /* HEADER */
+    header {
+        height: 40vh;
+    }
+
+    .wrapper-header {
+        width: 95%;
+    }
+
+    .logo {
+        width: 15vh;
+        text-align: left;
+    }
+    .menu-header-container {
+        padding-top: 25px;
+    }
+    .nav-menu {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .nav-menu li {
+        margin-right: 0;
+    }
+
+    .nav-menu li:not(:first-child) {
+        margin-top: 5px;
+    }
+    /* HEADER */
+
+
+
+    
+    /* BANNER */
+    .banner-desc {
+        height: 60vh;
+    }
+    .date {
+        width: 100%;
+        font-size: 15vw;
+    }
+    .event-text {
+        font-size: 10vw;
+    }
+    /* BANNER */
+
+
+
+    /* EVENTS */
+    .event {
+        flex-direction: column;
+        /* margin: auto; */
+    }
+    .event:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .event-img {
+        width: 100%;
+    }
+    
+    .event-desc {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 4vw;
+    }
+    /* EVENTS */
+
+
+    /* SCHEDULES */
+    .schedule .time, .schedule .name-schedule {
+        font-size: 5vw;
+    }
+    /* SCHEDULES */
+
+
+
+    /* CONTACTS */
+    .contacts .form-container form span {
+        margin: auto;
+    }
+    /* CONTACTS */
+
+
+
+
+    /* FOOTER */
+    footer {
+        width: 95%;
+        padding: 0;
+        margin: 20px auto;
+    }
+    .footer-wrapper {
+        width: 85%;
+        margin: auto;
+        padding: 30px;
+    }
+}
+
