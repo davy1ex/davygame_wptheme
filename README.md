@@ -1,2 +1,2 @@
 # myportfolio
-![Test Image 1](preview.png)
+![Test Image 1](screenshot.png)
